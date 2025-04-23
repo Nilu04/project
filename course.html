@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Details – SkillSprint</title>
+  <link rel="stylesheet" href="css/course.css" />
+</head>
+<body>
+  <header class="course-header">
+    <button onclick="goBack()">Back to Home</button>
+    <h1 id="courseTitle">Course Title</h1>
+  </header>
+
+  <main class="course-content">
+    <!-- Course Overview Section -->
+    <section class="course-overview">
+      <div class="instructor-info">
+        <img src="Instructor.png" alt="Instructor" class="instructor-img" />
+        <div>
+          <h2 id="instructorName">John Doe</h2>
+          <p id="instructorBio">Experienced developer with 10+ years of experience.</p>
+        </div>
+      </div>
+
+      <h3>Course Description</h3>
+      <p id="courseDescription">This course teaches HTML and CSS from scratch, perfect for beginners.</p>
+
+      <div class="course-details">
+        <p>Duration: <span id="courseDuration">3 hours</span></p>
+        <p>Difficulty: <span id="courseDifficulty">Beginner</span></p>
+        <button id="startCourseBtn" onclick="startCourse()">Start Course</button>
+      </div>
+    </section>
+
+    <!-- Course Progress Tracker -->
+    <section class="course-progress">
+      <h3>Your Progress</h3>
+      <progress id="courseProgress" value="50" max="100"></progress>
+      <p id="progressText">50% Complete</p>
+    </section>
+
+    <!-- Course Modules -->
+    <section class="course-modules">
+      <h3>Course Modules</h3>
+      <ul id="moduleList">
+        <li><input type="checkbox" disabled /> Introduction to HTML</li>
+        <li><input type="checkbox" disabled /> Understanding CSS</li>
+        <li><input type="checkbox" /> Advanced HTML & CSS</li>
+        <li><input type="checkbox" /> Responsive Web Design</li>
+      </ul>
+    </section>
+
+    <!-- Course Reviews -->
+    <section class="course-reviews">
+      <h3>Student Reviews</h3>
+      <div id="reviewSection">
+        <div class="review">
+          <p><strong>Jane Doe</strong> (⭐⭐⭐⭐⭐)</p>
+          <p>Great course, very easy to follow and learn the basics of web development!</p>
+        </div>
+        <div class="review">
+          <p><strong>Mark Smith</strong> (⭐⭐⭐⭐)</p>
+          <p>The course was good but could have more practical examples.</p>
+        </div>
+      </div>
+      <button onclick="addReview()">Add Review</button>
+    </section>
+
+    <!-- Related Courses -->
+    <section class="related-courses">
+      <h3>Related Courses</h3>
+      <ul id="relatedCoursesList">
+        <li><a href="course.html">Advanced JavaScript</a></li>
+        <li><a href="course.html">Responsive Web Design</a></li>
+        <li><a href="course.html">Intro to Web Development</a></li>
+      </ul>
+    </section>
+
+    <!-- Discussion Forum -->
+    <section class="course-discussion">
+      <h3>Discussion Forum</h3>
+      <textarea id="discussionInput" placeholder="Ask a question or discuss a topic..." rows="4"></textarea>
+      <button onclick="postDiscussion()">Post Discussion</button>
+      <div id="discussionPosts"></div>
+    </section>
+  </main>
+
+  <script src="js/course.js"></script>
+</body>
+</html>

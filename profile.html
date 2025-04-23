@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile – SkillSprint</title>
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">SkillSprint</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="settings.html">settings</a></li>
+      <li><a href="login.html" class="btn">Logout</a></li>
+    </ul>
+  </header>
+
+  <main class="profile-container">
+    <!-- Profile Overview -->
+    <section class="profile-overview">
+      <img id="profilePic" src="profile.png" alt="Profile Picture" class="profile-img" />
+      <input type="file" id="profileImageUpload" accept="image/*" onchange="updateProfileImage()" />
+      <br>
+      <h2 id="userName">Mahenthiran Nilujan</h2>
+      <p id="userEmail">example@email.com</p>
+    </section>
+
+    <!-- Editable Personal Info -->
+    <section class="profile-info">
+      <h3>Edit Info</h3>
+      <form id="profileForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="password">Change Password:</label>
+        <input type="password" id="password" name="password" placeholder="New Password" />
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+
+    <!-- User Progress -->
+    <section class="progress-section">
+      <h3>Course Progress</h3>
+      <div class="progress-card">
+        <h4>HTML & CSS Basics</h4>
+        <progress value="80" max="100"></progress>
+        <p>80% Complete</p>
+      </div>
+
+      <div class="progress-card">
+        <h4>JavaScript Fundamentals</h4>
+        <progress value="40" max="100"></progress>
+        <p>40% Complete</p>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="certificates-section">
+      <h3>Certificates</h3>
+      <ul class="certificate-list">
+        <li>
+          <a href="certificates/html-css.pdf" target="_blank">HTML & CSS Certificate</a>
+        </li>
+        <li>
+          <a href="certificates/js-basics.pdf" target="_blank">JavaScript Basics Certificate</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

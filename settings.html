@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings – SkillSprint</title>
+  <link rel="stylesheet" href="css/settings.css" />
+</head>
+<body>
+  <header class="settings-header">
+    <h1>Settings</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main class="settings-container">
+    <section class="preferences">
+      <h2>Preferences</h2>
+      <form id="settingsForm">
+        <label for="theme">Theme:</label>
+        <select id="theme" name="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+          <option value="en">English</option>
+          <option value="si">Sinhala</option>
+          <option value="ta">Tamil</option>
+        </select>
+
+        <label for="notifications">Enable Notifications:</label>
+        <input type="checkbox" id="notifications" name="notifications" checked />
+
+        <button type="submit">Save Settings</button>
+      </form>
+    </section>
+
+    <section class="account-actions">
+      <h2>Account Actions</h2>
+      <button onclick="deleteAccount()">Delete Account</button>
+    </section>
+  </main>
+
+  <script src="js/settings.js"></script>
+</body>
+</html>

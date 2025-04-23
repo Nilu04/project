@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - SkillSprint</title>
+  <link rel="stylesheet" href="css/dashboard.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SkillSprint</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Dashboard</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="login.html" class="btn">Logout</a></li>
+    </ul>
+  </header>
+
+  <!-- User Dashboard -->
+  <section class="dashboard">
+    <h2>Welcome, <span id="user-name">User</span>!</h2>
+
+    <div class="overview">
+      <div class="stat-card">
+        <h3>Enrolled Courses</h3>
+        <p>5</p>
+      </div>
+      <div class="stat-card">
+        <h3>Completed Courses</h3>
+        <p>3</p>
+      </div>
+      <div class="stat-card">
+        <h3>Progress</h3>
+        <p>75%</p>
+      </div>
+    </div>
+
+    <h3>Your Courses</h3>
+    <div class="courses-list">
+      <div class="course-item">
+        <h4>Web Development</h4>
+        <p>Status: In Progress</p>
+        <button>Continue</button>
+      </div>
+      <div class="course-item">
+        <h4>DevOps & Cloud</h4>
+        <p>Status: Completed</p>
+        <button>View Certificate</button>
+      </div>
+      <div class="course-item">
+        <h4>Cybersecurity Basics</h4>
+        <p>Status: Not Started</p>
+        <button>Enroll Now</button>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <section class="progress-section">
+      <h3>Learning Progress</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 75%;"></div>
+      </div>
+    </section>
+
+    <!-- Leaderboard & Daily Challenges -->
+    <section class="leaderboard">
+      <h3>Leaderboard</h3>
+      <div class="leaderboard-list">
+        <div class="leaderboard-item">
+          <span>1. John Doe</span>
+          <span>Points: 500</span>
+        </div>
+        <div class="leaderboard-item">
+          <span>2. Jane Smith</span>
+          <span>Points: 450</span>
+        </div>
+        <div class="leaderboard-item">
+          <span>3. Sam Wilson</span>
+          <span>Points: 400</span>
+        </div>
+      </div>
+      <button>Join Daily Challenge</button>
+    </section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 SkillSprint. All rights reserved.
+  </footer>
+
+  <script src="js/"></script>
+</body>
+</html>

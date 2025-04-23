@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+header .nav-links li {
+  margin-left: 20px;
+}
+
+header .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .btn {
+  background-color: #e63946;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.dashboard h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.dashboard .overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.dashboard .stat-card {
+  background-color: #3981e6;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .stat-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard .stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dashboard .courses-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.dashboard .course-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard .course-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard .course-item p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard .course-item button {
+  background-color: #003f7f;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard .course-item button:hover {
+    background-color: #003f7f;
+}
+
+.dashboard .progress-section {
+  margin-top: 2rem;
+}
+
+.dashboard .progress-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard .progress-bar {
+  background-color: #f4f4f9;
+  border-radius: 4px;
+  width: 100%;
+  height: 30px;
+}
+
+.dashboard .progress-bar .progress {
+  background-color: #2a9d5c;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.dashboard .leaderboard {
+  margin-top: 3rem;
+}
+
+.dashboard .leaderboard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard .leaderboard-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.dashboard .leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .leaderboard-item span {
+  font-size: 1.2rem;
+}
+
+.dashboard .leaderboard button {
+  background-color: #e63946;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard .leaderboard button:hover {
+  background-color: #264653;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #007BFF;
+  color: white;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

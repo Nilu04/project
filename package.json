@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "cypress": "^14.3.2",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "snyk": "^1.1296.2",
+    "standard-version": "^9.5.0"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-jaeger": "^2.0.0",
+    "@opentelemetry/sdk-node": "^0.200.0",
+    "prom-client": "^15.1.3"
+  }
+}

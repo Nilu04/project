@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup – SkillSprint</title>
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <form id="signupForm" class="auth-form">
+      <h2>Create Your Account</h2>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="signupEmail" placeholder="Email" required />
+      <input type="password" id="signupPassword" placeholder="Password" required />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Log in</a></p>
+      <div class="form-message" id="signupMessage"></div>
+    </form>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>
