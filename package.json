@@ -1,10 +1,10 @@
 {
-  "name": "learning",
+  "name": "your-project-name",
   "version": "1.0.0",
   "scripts": {
     "build": "echo \"No build step required for this project\"",
     "start": "node index.js",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
